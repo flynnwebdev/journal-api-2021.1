@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+    # before_action :authenticate
     before_action :set_category, except: [:index, :create]
 
     rescue_from Exception do |e|

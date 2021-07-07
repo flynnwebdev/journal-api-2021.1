@@ -1,4 +1,5 @@
 class EntriesController < ApplicationController
+  # before_action :authenticate
   before_action :set_entry, except: [:index, :create]
 
   rescue_from Exception do |e|

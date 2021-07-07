@@ -6,7 +6,7 @@ class EntriesController < ApplicationController
   end
 
   def index
-    render json: Entry.all
+    render json: Entry.order(updated_at: :desc)
   end
 
   def show

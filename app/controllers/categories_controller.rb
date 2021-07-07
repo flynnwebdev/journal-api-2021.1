@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
     end
   
     def index
-      render json: Category.all
+      render json: Category.order(:name)
     end
   
     def show
